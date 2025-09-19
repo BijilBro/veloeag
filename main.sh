@@ -4,10 +4,14 @@ cd velocity
 echo "Your MOTD (eagler only): $MOTD"
 echo "Your Max Players: $MAXPLAYERS"
 echo "Your IP (server): $SERVER"
+echo "Your 2nd IP (server): $SERVER2"
+echo "Your 3rd IP (server): $SERVER3"
 
 sed -i 's/${MOTD}/'"$MOTD"'/g' velocity.toml
 sed -i 's/${MAXPLAYERS}/'"$MAXPLAYERS"'/g' velocity.toml
 sed -i 's/${SERVER}/'"$SERVER"'/g' velocity.toml
+sed -i 's/${SERVER}/'"$SERVER2"'/g' velocity.toml
+sed -i 's/${SERVER}/'"$SERVER3"'/g' velocity.toml
 
 cd plugins
 cd eaglerxserver
