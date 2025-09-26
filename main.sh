@@ -9,9 +9,9 @@ echo "Your 3rd IP (server): $SERVER3"
 
 sed -i 's/${MOTD}/'"$MOTD"'/g' velocity.toml
 sed -i 's/${MAXPLAYERS}/'"$MAXPLAYERS"'/g' velocity.toml
-sed -i 's/${SERVER}/'"$MAXPLAYERS"'/g' velocity.toml
-sed -i 's/${SERVER2}/'"$MAXPLAYERS"'/g' velocity.toml
-sed -i 's/${SERVER3}/'"$MAXPLAYERS"'/g' velocity.toml
+sed -i 's/${SERVER}/'"$SERVER"'/g' velocity.toml
+sed -i 's/${SERVER2}/'"$SERVER2"'/g' velocity.toml
+sed -i 's/${SERVER3}/'"$SERVER3"'/g' velocity.toml
 
 cd plugins
 cd eaglerxserver
